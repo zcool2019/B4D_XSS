@@ -20,6 +20,7 @@ while True :
         driver.get(domain.group(0))
        # print(domain.group(1).split(":")[0])
         driver.add_cookie({"name" : "admin", "value" : "true"})
+        driver.add_cookie({"name" : "uid", "value" : "4f94462b93425d83f62c07c035e19ccf"})
         driver.get(start_url)
         time.sleep(10)
     except Exception as e:
